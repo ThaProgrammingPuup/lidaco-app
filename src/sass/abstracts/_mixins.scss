@@ -1,0 +1,16 @@
+// all the child elements of this elements are floated => the height collapses => becomes zero ==> clearfix hack
+@mixin clearfix {
+    
+    &::after {
+
+        //we need to specify the content property otherwise a pseudo element will simply not appear
+        //we want this empty because we don't want to see this element on the page
+        content: "";
+
+        //display it
+        display: table;
+
+        //the property that performs the clearfix: clear both floats (lerft -right)
+        clear: both;
+    }
+}
