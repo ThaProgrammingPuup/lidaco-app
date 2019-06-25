@@ -4,14 +4,11 @@
     -moz-perspective: 150rem;
     position: relative;
 
-    height: 50rem;
+    height: 46rem;
 
     &__side {
-        
-        color: $color-white;
-        font-size: $default-font-size;
 
-        height: 50rem;
+        height: 46rem;
         transition: all 0.8s ease;
         position: absolute;
         top: 0;
@@ -20,15 +17,16 @@
         backface-visibility: hidden;
 
         border-radius: 3px;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .15)
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
         &--front {
 
-            background-color:$color-white;
+            background-color: $color-white;
         }
 
         &--back {
-            background-color: greenyellow;
+            // background-color: greenyellow;
             transform: rotateY(180deg);
 
             &-1 {
@@ -36,13 +34,98 @@
             }
 
             &-2 {
+                background-image: linear-gradient(to right bottom, $color-quaterny-light, $color-quaterny-dark)
+            }
+
+            &-3 {
                 background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark)
+            }
+
+        }
+    }
+
+    &__picture {
+        background-size: cover;
+        height: 18rem;
+        background-blend-mode: soft-light;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(./assets/img/coaching-one-on-one.png);
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, $color-quaterny-light, $color-quaterny-dark), url(./assets/img/coaching-group.png);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(./assets/img/coaching-teaching.png);
+        }
+    }
+
+    &__heading {
+        font-size: 1.7rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 40%;
+
+    }
+
+    &__heading-span {
+        padding: 0.8rem 1rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom,
+                rgba($color-secondary-light, 0.75),
+                rgba($color-secondary-dark, 0.75),
+                )
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom,
+                rgba($color-quaterny-light, 0.75),
+                rgba($color-quaterny-dark, 0.75),
+                )
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom,
+                rgba($color-tertiary-light, 0.75),
+                rgba($color-tertiary-dark, 0.75),
+                )
+        }
+    }
+
+    &__details {
+        padding: 3rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.3rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-light-2
+                }
             }
         }
     }
 
     &:hover &__side--front {
-        transform: rotateY(180deg);
+        transform: rotateY(-180deg);
     }
 
     &:hover &__side--back {
