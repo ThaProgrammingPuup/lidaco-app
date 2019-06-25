@@ -1,7 +1,7 @@
 .feature-box {
     background-color: rgba($color-white, 0.8);
     font-size: $small-font-size;
-    padding: 3.5rem;
+    padding: 3.2rem;
     text-align: center;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
@@ -24,6 +24,6 @@
     }
 
     &__text {
-
+        font-size: $default-font-size;
     }
 }
