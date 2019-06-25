@@ -5,3 +5,21 @@
     padding: 20rem 0;
     margin-top: -20vh;
 }
+
+.section-features {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom,
+        rgba($color-secondary, 0.8),
+        rgba($color-primary, 0.8)),
+        url(../assets/img/coaching2.jpg);
+    background-size: cover;
+    background-position: top;
+
+    transform: skewY(-7deg);
+    margin-top: -10rem;
+
+    //select all the direct childs
+    & > * {
+        transform: skewY(7deg);
+    }
+}
