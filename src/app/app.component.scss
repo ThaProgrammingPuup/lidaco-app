@@ -19,7 +19,7 @@
     margin-top: -10rem;
 
     //select all the direct childs
-    & > * {
+    &>* {
         transform: skewY(7deg);
     }
 }
@@ -33,4 +33,18 @@
 .section-stories {
     position: relative;
     padding: 10rem 0;
+}
+
+.section-book {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, $color-primary, $color-secondary);
+}
+
+.book {
+    background-image: url(../assets/img/coaching-book3.jpg);
+    background-size: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    height: 50rem;
 }
