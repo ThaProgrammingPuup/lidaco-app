@@ -4,15 +4,14 @@ import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
-    path: 'Home',
-    redirectTo: '/Home',
+    path: '',
     component: AppComponent
   },
-  {
-    path: '',
-    redirectTo: '/Home',
-    pathMatch: 'full'
-  }
+  // {
+  //   path: '',
+  //   redirectTo: '/Home',
+  //   pathMatch: 'full'
+  // }
 ];
 
 @NgModule({
