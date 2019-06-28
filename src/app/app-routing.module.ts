@@ -5,13 +5,13 @@ import { AppComponent } from './app.component';
 const routes: Routes = [
   {
     path: '',
-    component: AppComponent
+    redirectTo: 'home',
+    pathMatch: 'full'
   },
-  // {
-  //   path: '',
-  //   redirectTo: '/Home',
-  //   pathMatch: 'full'
-  // }
+  {
+    path: 'home',
+    component: AppComponent,
+  }
 ];
 
 @NgModule({
