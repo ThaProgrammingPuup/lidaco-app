@@ -9,8 +9,8 @@
 .section-features {
     padding: 15rem 0;
     background-image: linear-gradient(to right bottom,
-        rgba($color-secondary, 0.8),
-        rgba($color-primary, 0.8)),
+            rgba($color-secondary, 0.8),
+            rgba($color-primary, 0.8)),
         url(../assets/img/coaching2.jpg);
     background-size: cover;
     background-position: top;
@@ -41,10 +41,19 @@
 }
 
 .book {
-    background-image: url(../assets/img/coaching-book3.jpg);
+    background-image: linear-gradient(105deg,
+            rgba($color-white, .9) 0%,
+            rgba($color-white, .9) 50%,
+            transparent 50%),
+        url(../assets/img/coaching-book3.jpg);
     background-size: 100%;
     border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
 
     height: 50rem;
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+    }
 }
