@@ -29,6 +29,11 @@
         }
     }
 
+    &__lidaco {
+        width: 35rem;
+        transform: translateX(-1.5rem);
+    }
+
     &__text-box {
         position: absolute;
         top: 40%;
@@ -37,4 +42,5 @@
 
         text-align: center;
     }
+
 }
