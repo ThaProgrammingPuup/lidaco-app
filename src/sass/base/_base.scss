@@ -24,6 +24,10 @@ html {
     @include respond(bigdesktop) {
         font-size: 75%;  //1rem = 12px, 12/16 = 75%
     }
+
+    @include respond(verybigdesktop) {
+        font-size: 87.5%;  //1rem = 14px, 14/16 = 75%
+    }
 }
 
 body {

@@ -34,7 +34,7 @@
         position: fixed;
         top: 7rem;
         right: 7rem;
-        background-image: radial-gradient($color-primary, $color-secondary);
+        background-image: radial-gradient($color-secondary, $color-primary);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
@@ -100,13 +100,18 @@
         &:hover,
         &:active {
             background-position: 100%;
-            color: $color-primary;
+            color: $color-secondary;
             transform: translateX(1rem);
         }
     }
 
     &__checkbox:checked~&__background {
-        transform: scale(90);
+        transform: scale(110);
+
+        @include respond(verybigdesktop) {
+            transform: scale(180);
+        }
+        
     }
 
     &__checkbox:checked~&__nav {

@@ -82,5 +82,17 @@ ORDER: Base + typography > general layout + grid > page layout > components
         ;
     }
 
+    
     //1800px
+
+    @if $breakpoint==verybigdesktop {
+        @media (min-width: 125em) {
+            @content
+        }
+
+        ;
+    }
+
+    //2000px +
+
 }
