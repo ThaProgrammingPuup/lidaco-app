@@ -16,6 +16,10 @@
         display: block;
         transition: all .3s;
 
+        @include respond(tabport) {
+            width: 100%;
+        }
+
         &:focus {
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
@@ -50,6 +54,11 @@
         width: 33%;
         display: inline-block;
         margin-top: 1rem;
+
+        @include respond(tabport) {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
     }
 
     &__radio-input {
