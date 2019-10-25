@@ -1,0 +1,60 @@
+@import "../../sass/abstracts/mixins";
+@import "../../sass/abstracts/variables";
+
+.scroll-to-top {
+    background-color: #fff;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+
+    position: fixed;
+    bottom: 6.5rem;
+    right: 7rem;
+
+    opacity: 0;
+    transition: all .2s ease-in-out;
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.2);
+
+    cursor: pointer;
+    z-index: 500;
+
+
+    @include respond(tabport) {
+        bottom: 4.5rem;
+        right: 5rem;
+    }
+
+    @include respond(phone) {
+        bottom: 3.5rem;
+        right: 4rem;
+    }
+
+    &__icon {
+        font-size: 4rem;
+        display: inline-block;
+        transform: translatey(-10px);
+        color: $color-black;
+        transition: all .2s ease-in-out;
+
+        @include respond(tabport) {
+            transform: translatey(-7px);
+        }
+
+        &:hover {
+            background-image: -webkit-gradient(linear, left top, right top, from(#125B4A), to(#FF5941));
+            background-image: linear-gradient(to right, #125B4A, #FF5941);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    }
+
+    &:hover {
+        transform: translatey(-3px);
+    }
+
+}
+
+.show-scrollTop {
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}

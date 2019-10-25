@@ -28,7 +28,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/icons/icon-font.css"
+              "src/assets/icons/icon-font.css",
+              "src/assets/arrows/arrows-font.css"
             ],
             "scripts": [],
             "es5BrowserSupport": true
