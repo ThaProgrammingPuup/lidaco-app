@@ -32,7 +32,7 @@
     &__icon {
         font-size: 4rem;
         display: inline-block;
-        transform: translatey(-10px);
+        transform: translatey(-8px);
         color: $color-black;
         transition: all .2s ease-in-out;
 
@@ -55,6 +55,6 @@
 }
 
 .show-scrollTop {
-    opacity: 1;
+    opacity: .6;
     transition: all .2s ease-in-out;
 }
