@@ -9,4 +9,13 @@ import { environment } from 'src/environments/environment';
 export class AppComponent {
 
   assetPath = environment.assetsPath;
+  checked = false;
+
+  /**
+   * uncheck
+   */
+  public uncheck() {
+    this.checked = false;
+  }
 }
+
