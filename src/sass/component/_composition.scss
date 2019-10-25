@@ -37,7 +37,6 @@
             @include respond(tabport) {
                 top: -1rem;
                 transform: scale(1.3);
-                z-index: 100;
             }
         }
 
@@ -58,12 +57,13 @@
             box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
             z-index: 20;
 
+            @include respond(tabport) {
+                transform: scale(1.4) translateY(0);
+            }
         }
     }
 
     &:hover &__photo:not(:hover){
         transform: scale(.9);
     }
-
-    //composition:hover composition__photo:not(:hover)
 }
