@@ -1,18 +1,42 @@
 <div class="navigation">
-  <input type="checkbox" class="navigation__checkbox" id="navi-toggle" [(ngModel)]="checked">
+  <input
+    type="checkbox"
+    class="navigation__checkbox"
+    id="navi-toggle"
+    [(ngModel)]="checked"
+  />
   <label for="navi-toggle" class="navigation__button">
-      <span class="navigation__icon">&nbsp;</span>
+    <span class="navigation__icon">&nbsp;</span>
   </label>
   <div class="navigation__background">&nbsp;</div>
 
   <div class="navigation__nav">
-      <ul class="navigation__list">
-          <li class="navigation__item" (click)="uncheck()"><a routerLink="." fragment="section-about" class="navigation__link"><span>01</span>About Coaching</a></li>
-          <li class="navigation__item" (click)="uncheck()"><a routerLink="." fragment="section-features" class="navigation__link"><span>02</span>Your benefits</a></li>
-          <li class="navigation__item" (click)="uncheck()"><a routerLink="." fragment="section-coaching" class="navigation__link"><span>03</span>Coaching options</a></li>
-          <li class="navigation__item" (click)="uncheck()"><a routerLink="." fragment="section-stories" class="navigation__link"><span>04</span>Stories</a></li>
-          <li class="navigation__item" (click)="uncheck()"><a routerLink="." fragment="section-book" class="navigation__link"><span>05</span>Book now</a></li>
-      </ul>
+    <ul class="navigation__list">
+      <li class="navigation__item" (click)="uncheck()">
+        <a routerLink="." fragment="section-about" class="navigation__link"
+          ><span>01</span>AVANCER PLUS VITE, PLUS LOIN, AVEC PLUS D’ÉNERGIE
+        </a>
+      </li>
+      <li class="navigation__item" (click)="uncheck()">
+        <a routerLink="." fragment="section-features" class="navigation__link"
+          ><span>02</span>vos bénéfices</a
+        >
+      </li>
+      <li class="navigation__item" (click)="uncheck()">
+        <a routerLink="." fragment="section-coaching" class="navigation__link"
+          ><span>03</span>NOUS VOUS PROPOSONS</a
+        >
+      </li>
+      <li class="navigation__item" (click)="uncheck()">
+        <a routerLink="." fragment="section-stories" class="navigation__link"
+          ><span>04</span>QUI SOMMES NOUS
+        </a>
+      </li>
+      <li class="navigation__item" (click)="uncheck()">
+        <a routerLink="." fragment="section-book" class="navigation__link"
+          ><span>05</span>PRENEZ CONTACT DÈS MAINTENANT</a
+        >
+      </li>
+    </ul>
   </div>
-
 </div>
