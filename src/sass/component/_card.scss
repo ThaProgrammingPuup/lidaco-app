@@ -59,11 +59,11 @@
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(./assets/img/coaching-one-on-one.png);
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(./assets/img/Coaching_20190718_04_WEB.jpg);
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-quaterny-light, $color-quaterny-dark), url(./assets/img/coaching-group.png);
+            background-image: linear-gradient(to right bottom, $color-quaterny-light, $color-quaterny-dark), url(./assets/img/Groep_20190722_028_WEB.jpg);
         }
 
         &--3 {
@@ -168,6 +168,7 @@
             box-shadow: none;
 
             &--back {
+                padding-top: 4rem ;
                 transform: rotateY(0);
                 clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
             }

@@ -32,7 +32,7 @@
     &__icon {
         font-size: 4rem;
         display: inline-block;
-        transform: translatey(-8px);
+        transform: translatey(-10px);
         color: $color-black;
         transition: all .2s ease-in-out;
 
@@ -41,8 +41,8 @@
         }
 
         &:hover {
-            background-image: -webkit-gradient(linear, left top, right top, from(#125B4A), to(#FF5941));
-            background-image: linear-gradient(to right, #125B4A, #FF5941);
+            background-image: -webkit-gradient(linear, left top, right top, from($color-secondary), to($color-primary));
+            background-image: linear-gradient(to right, $color-secondary, $color-primary);
             -webkit-background-clip: text;
             color: transparent;
         }
