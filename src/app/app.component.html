@@ -1,49 +1,17 @@
-<div class="navigation">
-    <input type="checkbox" class="navigation__checkbox" id="navi-toggle" [(ngModel)]="checked">
-    <label for="navi-toggle" class="navigation__button">
-        <span class="navigation__icon">&nbsp;</span>
-    </label>
-    <div class="navigation__background">&nbsp;</div>
-
-    <div class="navigation__nav">
-        <ul class="navigation__list">
-            <li class="navigation__item" (click)="uncheck()"><a routerLink="." fragment="section-about" class="navigation__link"><span>01</span>About Coaching</a></li>
-            <li class="navigation__item" (click)="uncheck()"><a routerLink="." fragment="section-features" class="navigation__link"><span>02</span>Your benefits</a></li>
-            <li class="navigation__item" (click)="uncheck()"><a routerLink="." fragment="section-coaching" class="navigation__link"><span>03</span>Coaching options</a></li>
-            <li class="navigation__item" (click)="uncheck()"><a routerLink="." fragment="section-stories" class="navigation__link"><span>04</span>Stories</a></li>
-            <li class="navigation__item" (click)="uncheck()"><a routerLink="." fragment="section-book" class="navigation__link"><span>05</span>Book now</a></li>
-        </ul>
-    </div>
-
-</div>
-
 <app-scroll-top></app-scroll-top>
+<app-lid-navigation-section></app-lid-navigation-section>
 
-<header class="header">
-    <div class="header__logo-box">
-        <img src="assets/logo/Logo3.png" alt="logo" class="header__logo" />
-    </div>
-
-    <div class="header__text-box">
-
-        <h1 class="heading-primary">
-            <span class="heading-primary--main">
-                <img src="assets/logo/Lidaco_wit.png" alt="Full logo" class="header__lidaco">
-            </span>
-            <span class="heading-primary--sub">coaching & consultancy</span>
-        </h1>
-
-        <a routerLink="." fragment="section-coaching" class="btn btn--white btn--animated">
-            Discover coaching
-        </a>
-    </div>
+<header>
+    <app-lid-header-section [title]="'Coaching & intelligence collective'"
+        [buttonTitle]="'Monique Ribesse – Coach certifiée ICF'">
+    </app-lid-header-section>
 </header>
 
 <main>
     <section class="section-about" id="section-about">
         <div class="u-center-text u-margin-bottom-big">
             <h2 class="heading-secondary">
-                Coaching for inspiring people
+                AVANCER PLUS VITE, PLUS LOIN, AVEC PLUS D’ÉNERGIE
             </h2>
         </div>
 
@@ -51,31 +19,42 @@
             <div class="col-1-of-2">
 
                 <h3 class="heading-tertiary u-margin-bottom-small">
-                    What is coaching all about ?
+                    LE COACHING, POUR MOI ET MON EQUIPE
                 </h3>
                 <p class="paragraph">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, ducimus in ipsum aut recusandae
-                    voluptas voluptatum incidunt mollitia ipsam.
+                    Votre environnement familial ou professionnel subit de profondes modifications; vous éprouvez de la
+                    peine à maîtriser les changements, la charge de travail, à vous engager dans une nouvelle voie ;
+                    vous procrastinez, vous voulez mieux avancer dans votre projet
                 </p>
+                <a href="#section-features" class="btn-text">En savoir plus &rarr;</a>
 
-                <h3 class="heading-tertiary u-margin-bottom-small">
-                    What about coaching lessons ?
+                <h3 class="heading-tertiary u-margin-bottom-small u-margin-top-big">
+                    PLUS D’INTELLIGENCE COLLECTIVE, POUR MON ORGANISATION
                 </h3>
                 <p class="paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro laborum, in temporibus incidunt,
-                    vitae qui.
+                    Vous vivez des changements profonds dans votre entreprise, dans votre équipe et vous voulez
+                    (re)prendre la barre ?
+                </p>
+                <p class="paragraph">
+                    Vous désirez maximiser votre impact et celui de votre équipe.
                 </p>
 
-                <a href="#" class="btn-text">Learn more &rarr;</a>
+                <p class="paragraph">
+                    Vous voulez développer des approches
+                    appropriées pour déployer de l’intelligence collective, le travail collaboratif, les communautés de
+                    pratique, le mentoring, la gestion des connaissances ?
+                </p>
+
+                <a href="#" class="btn-text">En savoir plus &rarr;</a>
 
             </div>
             <div class="col-1-of-2">
                 <div class="composition">
-                    <img src="assets/img/coach_about_1.png" alt="Photo 1"
+                    <img src="assets/img/Coaching_20190718_04_WEB.jpg" alt="Photo 1"
                         class="composition__photo composition__photo--p1">
-                    <img src="assets/img/coach_about_2.png" alt="Photo 2"
+                    <img src="assets/img/groep-1.png" alt="Photo 2"
                         class="composition__photo composition__photo--p2">
-                    <img src="assets/img/coach_about_3.png" alt="Photo 3"
+                    <img src="assets/img/groep-2.png" alt="Photo 3"
                         class="composition__photo composition__photo--p3">
                 </div>
             </div>
@@ -360,30 +339,8 @@
 
 </main>
 
-<footer class="footer">
-    <div class="footer__logo-box">
-        <img src="assets/logo/Lidaco_wit.png" alt="Full logo" class="footer__logo">
-    </div>
-    <div class="row">
-        <div class="col-1-of-2">
-            <div class="footer__navigation">
-                <ul class="footer__list">
-                    <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Carreer</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-1-of-2">
-            <p class="footer__copyright">
-                Built by <a href="" class="footer__link">Paul Moyaert</a> for <a href=""
-                    class="footer__link">Lidaco</a>. Copyright &copy; by Paul Moyaert. Credit to the original author,
-                Jonas Schmedtmann !
-            </p>
-        </div>
-    </div>
+<footer>
+    <app-lid-footer-section></app-lid-footer-section>
 </footer>
 
 <div class="popup" id="popup">
